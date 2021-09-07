@@ -3,12 +3,6 @@
   .hide-on-tablet-mobile {
     display: none;
   }
-
-  :root {
-    --header-height: 68px;
-    --navbar-height: 0px;
-  }
-
   .header {
     position: fixed;
     z-index: 10;
@@ -42,6 +36,10 @@
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
+  :root {
+    --header-height: 68px;
+    --navbar-height: 0px;
+  }
   .hide-on-tablet {
     display: none;
   }
@@ -53,6 +51,10 @@
 
 /* Mobile */
 @media (max-width: 739px) {
+  :root {
+    --header-height: 54px;
+    --navbar-height: 0px;
+  }
   .hide-on-mobile {
     display: none;
   }
@@ -128,5 +130,17 @@
   }
   .footer__download {
     margin-bottom: 10px;
+    justify-content: center;
+  }
+
+  .footer-heading {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .footer-item__link {
+    justify-content: center;
+  }
+  .footer__download-app {
+    flex: unset;
   }
 }
